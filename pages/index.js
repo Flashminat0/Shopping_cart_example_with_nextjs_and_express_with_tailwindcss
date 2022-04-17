@@ -1,18 +1,12 @@
-import Link from 'next/link'
+import ProductStrip from "../Components/ProductStrip";
+import Header from "../Components/Header";
 
 export default function Home() {
-  return (
-    <ul>
-      <li>
-        <Link href="/b" as="/a">
-          <a>a</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/a" as="/b">
-          <a>b</a>
-        </Link>
-      </li>
-    </ul>
-  )
+    return (
+        <>
+            <Header/>
+            <ProductStrip title={"Header 1"}/>
+            <ProductStrip title={"Header 2"}/>
+        </>
+    )
 }
